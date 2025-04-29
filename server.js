@@ -7,7 +7,7 @@ const projectRoutes = require('./routes/projectRoutes');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 // Set up multer for file uploads
 const upload = multer({ dest: 'uploads/' }); 
